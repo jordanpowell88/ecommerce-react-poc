@@ -17,7 +17,7 @@ const Item = ({ product, addToCart, removeFromCart }: { product: Product, addToC
     }
 
     return (
-        <div key={product.product_id} className="group">
+        <div key={product.product_id} className="group" data-cy="product">
             <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                 <img
                     src={product.image_urls[0]}

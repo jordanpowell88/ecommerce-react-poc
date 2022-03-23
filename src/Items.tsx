@@ -6,7 +6,7 @@ import Item from './Item';
 import Search from './Search';
 
 const Items = (): ReactElement => {
-    const products = useProducts();
+    const { products } = useProducts();
     const [search, setSearch] = useState<string>();
     const [filter, setFilter] = useState<string>();
     const [cartItems, setCartItems] = useState<Product[]>([]);

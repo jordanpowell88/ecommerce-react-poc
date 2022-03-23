@@ -39,9 +39,10 @@ export async function fetchProducts(): Promise<Product[]> {
 
 export const useProducts = () => {
   const [products, setProducts] = useState<Product[]>([]);
+  
   useEffect(() => {
     fetchProducts().then(products => setProducts(products))
   }, [])
 
-  return products;
+  return { products, setProducts }
 }
