@@ -1,6 +1,6 @@
 import { ReactElement, useState } from "react";
 import AddToCartButton from "./AddToCartButton";
-import { Product } from './client';
+import { Product } from '../client';
 import RemoveFromCartButton from "./RemoveFromCartButton";
 
 const Item = ({ product, addToCart, removeFromCart }: { product: Product, addToCart: (product: Product) => void, removeFromCart: (product: Product) => void }): ReactElement => {

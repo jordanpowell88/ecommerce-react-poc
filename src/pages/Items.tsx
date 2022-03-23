@@ -1,9 +1,6 @@
 import { ReactElement, useState } from "react";
-import CartIcon from "./CartIcon";
-import { Product, useProducts } from "./client";
-import Filter from "./Filter";
-import Item from './Item';
-import Search from './Search';
+import { Product, useProducts } from "../client";
+import { CartIcon, Filter, Item, Search } from "../components";
 
 const Items = (): ReactElement => {
     const { products } = useProducts();
