@@ -14,11 +14,11 @@ const Items = (): ReactElement => {
     const handleFilters = (product: Product): boolean => {
         if (filter && search) {
             if (filter === 'Name') {
-                return product.name.includes(search)
+                return product.name.toLowerCase().includes(search.toLocaleLowerCase())
             }
 
             if (filter === 'Description') {
-                return product.description.includes(search)
+                return product.description.toLowerCase().includes(search.toLocaleLowerCase())
             }
         }
 

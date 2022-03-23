@@ -4,6 +4,9 @@ const Filter = ({ onChange }: { onChange: (value: string) => void }): ReactEleme
     const filter = (event: ChangeEvent<HTMLSelectElement>) => onChange(event.target.value)
     return (
         <div className="basis-1/8">
+        <label htmlFor="filter" className="sr-only">
+            Filter
+        </label>
         <select
             id="filter"
             name="filter"

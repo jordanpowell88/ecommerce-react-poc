@@ -5,7 +5,7 @@ const Search = ({ onChange }: { onChange: (value: string) => void }): ReactEleme
 
     return (
         <div className="basis-1/8 mx-2">
-        <label htmlFor="email" className="sr-only">
+        <label htmlFor="search" className="sr-only">
             Email
         </label>
         <input
